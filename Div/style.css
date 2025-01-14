@@ -1,4 +1,4 @@
-div
+div.polaroid
 {
     border:solid 8px white;
     border-bottom:solid 30px white;
@@ -28,25 +28,31 @@ body
 div.a {
     
     position:relative;
+    left: 0px;
+    transform: rotate(0deg);
   }
   
   div.b {
     
     position: relative;
     left: 0px;
+    transform: rotate(0deg);
   }
   
   div.c {
     
     position: relative;
     left: 0px;
+    transform: rotate(0deg);
   }
   div.d{
     position: relative;
-    left: 0px;}
+    left: 0px;
+    transform: rotate(0deg);}
   div.e{
     position: relative;
     left: 0px;
+    transform: rotate(0deg);
   }
   h1{
     position: fixed;

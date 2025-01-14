@@ -42,12 +42,22 @@ for (var i=0; i<arrayDiv.length;i++){
     var rot=Math.floor(Math.random()*720)-360;// genera un grado di rotazione
     arrayDiv[i].style.left= posx +"px";//assegna ad un div da .css specificando l'unità di misura dello spostamento o della rotazione
     arrayDiv[i].style.top= posy +"px";
-    arrayDiv[i].style.trasform = "rotate ("+ rot,"deg)";
+    arrayDiv[i].style.trasform = "rotate(" + rot + "deg)";
 
 }}
 async function fetchimmaginiJSON() {
     const response = await fetch('file.json');
     const polaroid = await response.json();
     console.log (polaroid);
+
+    console.log(polaroid.immagini.length);
+    for (var i=0; i< polaroid.immagini.length;i++){
+        console.log(polaroid.immagini[i].didascalia);
+        const div =document.createElement("div");
+        div.innerHTML = polaroid.immagini.didascalia;
+        div.classList.add("polaroid");
+        document.getElementById("album").appendChild(div);
+        
+    }
 }
 fetchimmaginiJSON();

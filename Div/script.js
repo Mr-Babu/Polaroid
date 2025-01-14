@@ -44,4 +44,10 @@ for (var i=0; i<arrayDiv.length;i++){
     arrayDiv[i].style.top= posy +"px";
     arrayDiv[i].style.trasform = "rotate ("+ rot,"deg)";
 
-}}
+}
+async function fetchimmaginiJSON() {
+    const response = await fetch('file.json');
+    const polaroid = await response.json();
+    console.log (polaroid);
+}
+fetchimmaginiJSON();

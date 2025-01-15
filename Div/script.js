@@ -31,8 +31,8 @@ function aggiornatutto(){
     aggiorna("d");
     aggiorna("e");
 }
-
 aggiorna();*/
+
 var arrayDiv = document.getElementsByTagName("div");
 function aggiorna(){
 for (var i=0; i<arrayDiv.length;i++){
